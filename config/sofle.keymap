@@ -30,17 +30,17 @@
     combos {
         compatible = "zmk,combos";
 
-        lock {
+        lockwin {
             bindings = <&kp LEFT_WIN>;
             key-positions = <33>;
         };
     };
 
     macros {
-        new_macro: new_macro {
+        lockwin: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&kp L &kp LEFT_WIN>;
             label = "NEW_MACRO";
         };
     };

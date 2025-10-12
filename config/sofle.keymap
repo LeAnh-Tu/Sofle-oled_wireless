@@ -32,7 +32,7 @@
 
         lok {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <33>;
+            key-positions = <33 50>;
         };
     };
 

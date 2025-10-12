@@ -27,14 +27,12 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
 
-    macros {
-        lock: lock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp L>;
-            label = "LOCK";
+        lok {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <33>;
         };
     };
 

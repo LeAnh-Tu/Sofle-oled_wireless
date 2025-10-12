@@ -27,23 +27,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        LOCKWIN1 {
-            bindings = <&LOCKWIN>;
-            key-positions = <50 33>;
-        };
-    };
-
-    macros {
-        LOCKWIN: LOCKWIN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp L>;
-            label = "LOCKWIN";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
